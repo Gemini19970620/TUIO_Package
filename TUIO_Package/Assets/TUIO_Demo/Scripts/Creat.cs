@@ -13,7 +13,7 @@ public class Creat : MonoBehaviour
     {
         if (gameObject.GetComponent<TUIOFunctionWithVector2>() != null)
         {
-            gameObject.GetComponent<TUIOFunctionWithVector2>().Function = new TUIOFunctionWithVector2.FunctionWithVector2(Creat_Object);
+            gameObject.GetComponent<TUIOFunctionWithVector2>().Click_event = new TUIOFunctionWithVector2.FunctionWithVector2(Creat_Object);
         }
         else
         {

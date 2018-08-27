@@ -2,7 +2,7 @@ WindowsStandalone
 PlayerPath?
 C:/Users/TangSheng/Desktop/TUIO_Button/TUIO_Button.exe
 SceneListBegin?
-Assets/Demo/Scenes/Demo.unity
+Assets/TUIO_Demo/Scenes/TUIO_Demo.unity
 SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TouchScript.Behaviors.Cursors.UI.TextureSwitch
 70d9a5dfdd92296522528a98d2f5ed68 Assembly-CSharp.dll:TouchScript.Behaviors.Cursors.PenCursor
@@ -21,6 +21,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 30afa8783a8bbee2e465ec9ce1efaee2 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 607d64d2c4bc76ac9876e6f7b9cc7edf UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 4db4eddbab184d463c1433e1bb2af81f Assembly-CSharp.dll:TouchScript.Examples.UI.SetColor
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ActivateDisplay
 08712033bfb8d4fd2842041f9a20ded7 Assembly-CSharp.dll:TouchScript.Examples.RawInput.Spawner
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TouchScript.Core.LayerManagerInstance
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
@@ -55,7 +56,7 @@ c63db43c730fa2cbb8ca07de15898cb6 UnityEngine.UI.dll:UnityEngine.UI.Toggle
 f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 86d36c43c53541d667100dc90b89cfba UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 1b8c02d0aa82fbf036a2b9b2d713eec3 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
-14a54d78c0819310af0886659be7d89b Assembly-CSharp.dll:TangSheng.TUIO.TUIOComponent
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TangSheng.TUIO.TUIOComponent
 bd927de58391934c4b4af8c21c273716 Assembly-CSharp.dll:TouchScript.Examples.Cube.LayerDelegate
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
@@ -93,7 +94,6 @@ f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 dac154b38532fd5a92a95b0a9a386115 Assembly-CSharp.dll:TouchScript.Behaviors.Cursors.ObjectCursor
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TouchScript.Examples.Multiuser.Logo
 03fd9fb453aaf08fa0b51d0e62cff2f4 Assembly-CSharp.dll:.Highlight
-14a54d78c0819310af0886659be7d89b Assembly-CSharp.dll:TangSheng.TUIO.TUIODrag
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 cf455f7a806648c6ed4c7d3e3f8a0e03 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 13bdb7c23815c33a33b37b0ba8dd39be UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -142,9 +142,9 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TouchScript.Examples.Checkers.Board
+32a9915d08fe6b654281606e6a572b03 Assembly-CSharp.dll:TangSheng.TUIO.ButtonDefinedEvent
 a2398cab0afec05bd8b6b70c007a516c Assembly-CSharp.dll:TouchScript.Behaviors.Cursors.UI.GradientTexture
 ab806c56702d5d39fc3c5f1bc0abfc66 Assembly-CSharp.dll:TouchScript.InputSources.TuioInput
-14a54d78c0819310af0886659be7d89b Assembly-CSharp.dll:TangSheng.TUIO.TUIOButton
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TouchScript.GestureManager
 6000fe8bc7ad3de433e96059412f3c84 Assembly-CSharp.dll:TouchScript.Core.DebuggableMonoBehaviour
 16629654e077de3aaa11d1c59882c17b Assembly-CSharp.dll:TouchScript.Gestures.PressGesture
@@ -170,8 +170,9 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 a0067fc4420c9f3fa90a4f129c5dfc4d Assembly-CSharp.dll:TouchScript.Gestures.TransformGestures.Clustered.ClusteredScreenTransformGesture
 d633212d6f78342331a42d3de880caf9 Assembly-CSharp.dll:TouchScript.Examples.KillMe
 f5d495b78c5e9e222263d95f5292a04f Assembly-CSharp.dll:TouchScript.Gestures.ReleaseGesture
-14a54d78c0819310af0886659be7d89b Assembly-CSharp.dll:TangSheng.TUIO.TUIOFunctionWithVector2
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TestButton
+bef0bd5ef1fb6363fc9ea1db1f471fa7 Assembly-CSharp.dll:TangSheng.TUIO.TUIOFunctionWithVector2
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ChangeColor
+bef0bd5ef1fb6363fc9ea1db1f471fa7 Assembly-CSharp.dll:TangSheng.TUIO.ButtonOriginalEvent
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TouchScript.Examples.Colors.Circle
 cb97a7255fc93225f72d59e3854b1464 Assembly-CSharp.dll:TouchScript.Gestures.TransformGestures.Clustered.ClusteredTransformGesture
 e42de2fa430ffdc5cba11107db58d22d Assembly-CSharp.dll:TouchScript.Examples.CameraControl.CameraController
@@ -189,7 +190,7 @@ e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
 67a5f2c97205d2e41a8ed7c7ce898f6e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSoundfieldExtension
 67a5f2c97205d2e41a8ed7c7ce898f6e UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
-45f7ca2687d2a667f1277fc902c05f6f Assembly-CSharp.dll:TangSheng.TUIO.TUIOButtonManager
+fce925ada74cb5065d8f22fb89653dfc Assembly-CSharp.dll:TangSheng.TUIO.TUIOComponentManager
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
@@ -216,5 +217,3 @@ ea49a7399a03c265ce1afe9a04b5385b Assembly-CSharp.dll:.Creat
 354799ab7253e8d83914c27d4dc65f56 Assembly-CSharp.dll:TouchScript.Examples.Portal.Spawner
 59a66ea364a78dcebd50a06375f2a04b Assembly-CSharp.dll:TouchScript.Gestures.TransformGestures.PinnedTransformGesture
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TouchScript.LayerManager
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ActivateDisplay
-675d1a368c6b321e05c1615198fb6f62 Assembly-CSharp.dll:TangSheng.TUIO.TUIOFunction

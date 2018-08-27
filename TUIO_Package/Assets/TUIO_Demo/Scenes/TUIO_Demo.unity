@@ -211,7 +211,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 76498077}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
@@ -504,7 +504,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22341586, guid: c0dc5781cae4a6348b42ea6b818a3f9c, type: 2}
       propertyPath: m_TargetDisplay
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: c0dc5781cae4a6348b42ea6b818a3f9c, type: 2}
       propertyPath: m_IsActive
@@ -742,8 +742,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 611566739}
-  - component: {fileID: 611566741}
   - component: {fileID: 611566742}
+  - component: {fileID: 611566741}
   - component: {fileID: 611566740}
   m_Layer: 0
   m_Name: Script_bags
@@ -781,16 +781,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64092e6b3ef620846bfcf7cd560ae91d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TUIO_button:
+  TUIOGameobject:
   - {fileID: 1192791737}
-  TUIO_function:
-  - {fileID: 2065138019}
-  TUIO_function_v2:
-  - {fileID: 1907192671}
-  TUIO_object_drag:
   - {fileID: 1028223417}
-  CheckTime: 0.8
-  Mouse_input: 0
+  - {fileID: 2065138019}
+  - {fileID: 1907192671}
+  Mouse_input: 1
 --- !u!114 &611566741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1087,7 +1083,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u89E6\u53D1\u4E00\u4E2A\n\u81EA\u5B9A\u4E49\u65B9\u6CD5"
+  m_Text: "\u89E6\u53D1\n\u81EA\u5B9A\u4E49\u65B9\u6CD5"
 --- !u!222 &785653970
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1104,7 +1100,8 @@ GameObject:
   - component: {fileID: 1028223418}
   - component: {fileID: 1028223421}
   - component: {fileID: 1028223420}
-  - component: {fileID: 1028223422}
+  - component: {fileID: 1028223419}
+  - component: {fileID: 1028223423}
   m_Layer: 0
   m_Name: Button2
   m_TagString: Untagged
@@ -1131,6 +1128,17 @@ RectTransform:
   m_AnchoredPosition: {x: -411, y: -285}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1028223419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1028223417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dbadbc99a7017b48b20fb56a7a50911, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1028223420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1164,7 +1172,7 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1028223417}
---- !u!114 &1028223422
+--- !u!114 &1028223423
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1177,8 +1185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   check_time: 0
-  default_time: 0
-  less_camera: {fileID: 0}
+  check_released_time: 0
 --- !u!1 &1192791737
 GameObject:
   m_ObjectHideFlags: 0
@@ -1322,13 +1329,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1192791737}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77a75a26e00c90746838b8facd0f6456, type: 3}
+  m_Script: {fileID: 11500000, guid: e62750d9bff09db44a0225b10ffc53f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
   check_time: 0
-  default_time: 0
-  less_camera: {fileID: 0}
+  check_released_time: 0
 --- !u!1001 &1286209402
 Prefab:
   m_ObjectHideFlags: 0
@@ -1415,6 +1421,18 @@ Prefab:
     - target: {fileID: 11478012, guid: 1c4dd8a13f501b04f84fe824120f70bb, type: 2}
       propertyPath: universalWindowsMouse
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11478012, guid: 1c4dd8a13f501b04f84fe824120f70bb, type: 2}
+      propertyPath: emulateSecondMousePointer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11478012, guid: 1c4dd8a13f501b04f84fe824120f70bb, type: 2}
+      propertyPath: webGLTouch
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11478012, guid: 1c4dd8a13f501b04f84fe824120f70bb, type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1c4dd8a13f501b04f84fe824120f70bb, type: 2}
@@ -1730,6 +1748,7 @@ GameObject:
   - component: {fileID: 1907192673}
   - component: {fileID: 1907192675}
   - component: {fileID: 1907192676}
+  - component: {fileID: 1907192677}
   m_Layer: 0
   m_Name: Field
   m_TagString: Untagged
@@ -1816,8 +1835,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 2
   check_time: 0
-  default_time: 0
-  less_camera: {fileID: 0}
+  check_released_time: 0.3
+--- !u!114 &1907192677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1907192671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77a75a26e00c90746838b8facd0f6456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 1
+  check_time: 0
+  check_released_time: 0
 --- !u!1 &1965279138
 GameObject:
   m_ObjectHideFlags: 0
@@ -1881,7 +1913,7 @@ Canvas:
   m_GameObject: {fileID: 1965279138}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -1963,13 +1995,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 1
   check_time: 0
-  default_time: 0
-  less_camera: {fileID: 0}
-  Invoking_event:
+  check_released_time: 0.01
+  Enter_event:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2065138024}
-        m_MethodName: Change_color
+        m_MethodName: Enter_change
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1979,6 +2010,27 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  Exit_event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2065138024}
+        m_MethodName: Exit_change
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  Click_event:
+    m_PersistentCalls:
+      m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2065138022

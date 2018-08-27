@@ -165,11 +165,12 @@
     <Compile Include="Assets\TouchScript\Scripts\Pointers\PointerFactory.cs" />
     <Compile Include="Assets\TouchScript\Scripts\Pointers\TouchPointer.cs" />
     <Compile Include="Assets\TouchScript\Scripts\TouchManager.cs" />
-    <Compile Include="Assets\TouchScript\Scripts\TUIOFunction\TUIOButton.cs" />
-    <Compile Include="Assets\TouchScript\Scripts\TUIOFunction\TUIOButtonManager.cs" />
+    <Compile Include="Assets\TouchScript\Scripts\TUIOFunction\ButtonDefinedEvent.cs" />
+    <Compile Include="Assets\TouchScript\Scripts\TUIOFunction\ButtonOriginalEvent.cs" />
+    <Compile Include="Assets\TouchScript\Scripts\TUIOFunction\TUIOButtonBase.cs" />
     <Compile Include="Assets\TouchScript\Scripts\TUIOFunction\TUIOComponent.cs" />
+    <Compile Include="Assets\TouchScript\Scripts\TUIOFunction\TUIOComponentManager.cs" />
     <Compile Include="Assets\TouchScript\Scripts\TUIOFunction\TUIODrag.cs" />
-    <Compile Include="Assets\TouchScript\Scripts\TUIOFunction\TUIOFunction.cs" />
     <Compile Include="Assets\TouchScript\Scripts\TUIOFunction\TUIOFunctionWithVector2.cs" />
     <Compile Include="Assets\TouchScript\Scripts\Utils\Attributes\NullToggleAttribute.cs" />
     <Compile Include="Assets\TouchScript\Scripts\Utils\Attributes\ToggleLeftAttribute.cs" />

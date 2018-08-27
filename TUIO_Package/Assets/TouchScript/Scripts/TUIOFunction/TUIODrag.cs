@@ -7,7 +7,7 @@ namespace TangSheng.TUIO
     /// <summary>
     /// 拖拽事件
     /// </summary>
-    public class TUIODrag : TUIOComponent
+    public class TUIODrag : TUIOButtonBase
     {
         private bool IsDrag = false;
 
